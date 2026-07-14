@@ -1,36 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>MyPart — Privacy Policy</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MyPart</title>
 <style>
-body{font-family:sans-serif;max-width:700px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}
-h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:2rem}
+  :root{
+    --paper:#f7f8f6;
+    --ink:#1c231f;
+    --ink-soft:#55635b;
+    --line:#dde3de;
+    --accent:#146356;
+    --accent-soft:#e1ede9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#121815;
+      --ink:#e7ece9;
+      --ink-soft:#a3b3ac;
+      --line:#2a3733;
+      --accent:#4fd8b8;
+      --accent-soft:#173832;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:3rem 1.25rem 5rem;
+  }
+  header{
+    border-bottom:1px solid var(--line);
+    padding-bottom:1.5rem;
+    margin-bottom:2rem;
+  }
+  .eyebrow{
+    font-size:0.85rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:600;
+  }
+  h1{
+    font-size:2rem;
+    margin:0.35rem 0 0.5rem;
+    text-wrap:balance;
+  }
+  .meta{
+    color:var(--ink-soft);
+    font-size:0.95rem;
+  }
+  .meta a{color:var(--accent); text-decoration:none;}
+  .meta a:hover{text-decoration:underline;}
+  h2{
+    font-size:1.25rem;
+    margin:2.25rem 0 0.75rem;
+    padding-top:0.25rem;
+  }
+  p, li{color:var(--ink); font-size:1rem;}
+  ul, ol{padding-left:1.3rem;}
+  li{margin-bottom:0.35rem;}
+  ol li{margin-bottom:0.6rem;}
+  strong{font-weight:600;}
+  a{color:var(--accent);}
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:1rem 1.25rem;
+    font-size:0.95rem;
+    margin:1.5rem 0;
+  }
+  footer{
+    margin-top:3rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--line);
+    color:var(--ink-soft);
+    font-size:0.85rem;
+  }
 </style>
 </head>
 <body>
-<h1>MyPart — Privacy Policy</h1>
-<p><em>Last updated: July 4, 2026</em></p>
+<div class="wrap">
 
-<p>MyPart ("the App") is a choir rehearsal assistance app. This policy describes what data the App collects and how it is used.</p>
+  <header>
+    <div class="eyebrow">MyPart — Choir Assist App</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: July 14, 2026 · Contact: <a href="mailto:ftk.feh@gmail.com">ftk.feh@gmail.com</a></div>
+  </header>
 
-<h2>Account Data</h2>
-<p>If you create an account (sign-in), we collect your email address via Firebase Authentication to identify your account and sync your data across devices.</p>
+  <p>MyPart is a rehearsal and playback assistance app for choir singers. It plays part-specific guide notes (Soprano, Alto, Tenor, Bass) in sync with accompaniment, displays notation and lyrics, and helps you rehearse offline. This policy describes what data the app collects, why, and how to delete it.</p>
 
-<h2>Synced App Data</h2>
-<p>When signed in, the App stores your library, rehearsal sessions, playlists, and related settings in Firebase Firestore/Storage so they sync across your devices. This data is not shared with third parties and is not sold.</p>
+  <h2>Account Sign-In</h2>
+  <p>MyPart requires an account to use cloud sync, playlists, and calibration profiles. You can sign in with:</p>
+  <ul>
+    <li><strong>Google Sign-In</strong></li>
+    <li><strong>Facebook Login</strong></li>
+  </ul>
+  <p>Signing in shares your email address and account identifier with MyPart via Firebase Authentication. We use this only to identify your account and keep your data synced across your own devices — it is never shared with other users or sold to third parties.</p>
 
-<h2>Bluetooth</h2>
-<p>The App uses Bluetooth solely to measure and compensate for audio playback latency to connected headphones/speakers. No Bluetooth data is transmitted off your device.</p>
+  <h2>Data We Store</h2>
+  <p>MyPart uses Cloud Firestore (Google Firebase) to sync content tied to your signed-in account:</p>
+  <ul>
+    <li>Custom arrangements and score metadata you import</li>
+    <li>Playlists and setlists</li>
+    <li>Annotations you add to a score</li>
+    <li>Earpiece/accompaniment calibration profiles and session history</li>
+    <li>Subscription tier (Free / Plus / Pro)</li>
+  </ul>
+  <p><strong>This data is private to your account.</strong> It is never visible to, or shared with, other users of the app.</p>
 
-<h2>No Advertising or Analytics Tracking</h2>
-<p>The App does not include third-party advertising SDKs, analytics trackers, or crash-reporting telemetry.</p>
+  <h2>Microphone Access</h2>
+  <p>MyPart requests microphone permission to support optional live pitch/timing assistance and Bluetooth latency calibration during a session.</p>
+  <ul>
+    <li>Microphone audio is processed <strong>live, in memory, on-device only</strong>.</li>
+    <li><strong>Raw audio is never recorded, saved to disk, uploaded, or transmitted anywhere.</strong></li>
+    <li>Microphone access is only active while a session or calibration screen is open and the permission is granted. You can revoke it at any time in your device's app settings.</li>
+  </ul>
 
-<h2>Data Deletion</h2>
-<p>You may request deletion of your account and all associated synced data at any time by contacting us at the email below. Deletion removes your account record and synced library/session/playlist data from our servers.</p>
+  <h2>Advertising (Free Tier)</h2>
+  <p>The Free version of MyPart shows ads served through <strong>Google AdMob</strong>. To serve and measure ads, AdMob collects a device advertising identifier and basic app-interaction signals, which are shared with Google. This applies only to the Free tier — Plus and Pro subscribers do not see ads.</p>
+  <p>You can review or reset your advertising identifier, and opt out of personalized ads, in your device's Google Settings → Ads.</p>
 
-<h2>Contact</h2>
-<p>Questions about this policy: ftk.feh@gmail.com</p>
+  <h2>In-App Purchases</h2>
+  <p>Plus and Pro subscriptions are sold and processed through <strong>Google Play Billing</strong>. MyPart does not collect or store your payment details — purchases are handled entirely by Google Play, and your subscription status is synced to your account so it's recognized across your devices.</p>
+
+  <h2>Data We Do Not Collect</h2>
+  <ul>
+    <li>No audio recordings of any kind</li>
+    <li>No location data</li>
+    <li>No usage analytics or crash-reporting SDK is currently integrated</li>
+    <li>No sale of personal data to third parties</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li><strong>Firebase (Google)</strong> — authentication, Cloud Firestore. See Google's privacy policy for how Firebase infrastructure handles data: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li><strong>Google AdMob</strong> — ad serving on the Free tier. See Google's ad policy: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></li>
+    <li><strong>Google Play Billing</strong> — subscription purchases.</li>
+    <li><strong>Facebook Login</strong> — optional sign-in method. See Meta's privacy policy: <a href="https://www.facebook.com/privacy/policy">facebook.com/privacy/policy</a></li>
+  </ul>
+
+  <h2>How to Delete Your Account</h2>
+  <p>You can permanently delete your MyPart account and all associated data directly in the app — no need to contact support.</p>
+  <ol>
+    <li>Open MyPart and make sure you're signed in.</li>
+    <li>Go to the <strong>Profile</strong> tab (or <strong>Settings</strong>, from the menu) — both offer the same option.</li>
+    <li>Scroll to the bottom and tap <strong>Delete Account</strong>.</li>
+    <li>A confirmation dialog explains that this permanently deletes your account and everything in it — your arrangements, playlists, annotations, and calibration profiles — and that it <strong>cannot be undone</strong>. Tap <strong>Delete Account</strong> again to confirm, or <strong>Cancel</strong> to back out.</li>
+    <li>If you haven't signed in recently, you may be asked to <strong>sign in again</strong> to verify it's really you before the deletion can proceed. Complete the sign-in prompt and the deletion will continue automatically.</li>
+    <li>Once deletion completes, you're signed out and returned to the sign-in screen. Your data — cloud library, playlists, annotations, and calibration profiles — is permanently removed from our servers at that point.</li>
+  </ol>
+  <div class="callout">If you'd rather not use the in-app flow, you can also request deletion by emailing <a href="mailto:ftk.feh@gmail.com">ftk.feh@gmail.com</a> from the email address associated with your account.</div>
+
+  <h2>Children's Privacy</h2>
+  <p>MyPart is intended for a general audience and is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this policy changes, the "Effective date" above will be updated and a notice will be shown in the app.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data: <a href="mailto:ftk.feh@gmail.com">ftk.feh@gmail.com</a></p>
+
+  <footer>MyPart — Choir Assist App</footer>
+
+</div>
 </body>
 </html>
