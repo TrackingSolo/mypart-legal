@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — MyPart</title>
+<meta name="google-site-verification" content="-_YpcjxKhaGfRMk41bRXID7-dnGt-Y5gG-k-i8gEAN4" />
 <style>
   :root{
     --paper:#f7f8f6;
@@ -93,7 +94,7 @@
   <header>
     <div class="eyebrow">MyPart — Choir Assist App</div>
     <h1>Privacy Policy</h1>
-    <div class="meta">Effective date: July 14, 2026 · Contact: <a href="mailto:ftk.feh@gmail.com">ftk.feh@gmail.com</a></div>
+    <div class="meta">Effective date: July 19, 2026 · Contact: <a href="mailto:ftk.feh@gmail.com">ftk.feh@gmail.com</a></div>
   </header>
 
   <p>MyPart is a rehearsal and playback assistance app for choir singers. It plays part-specific guide notes (Soprano, Alto, Tenor, Bass) in sync with accompaniment, displays notation and lyrics, and helps you rehearse offline. This policy describes what data the app collects, why, and how to delete it.</p>
@@ -126,8 +127,9 @@
   </ul>
 
   <h2>Advertising (Free Tier)</h2>
-  <p>The Free version of MyPart shows ads served through <strong>Google AdMob</strong>. To serve and measure ads, AdMob collects a device advertising identifier and basic app-interaction signals, which are shared with Google. This applies only to the Free tier — Plus and Pro subscribers do not see ads.</p>
-  <p>You can review or reset your advertising identifier, and opt out of personalized ads, in your device's Google Settings → Ads.</p>
+  <p>The Free version of MyPart shows banner ads served through <strong>Google AdMob</strong>. To serve and measure ads, AdMob may collect device and advertising identifiers (including your Google Advertising ID) and basic app-interaction signals, which are shared with Google. Ads are only requested on the Free tier — Plus and Pro subscribers do not see ads.</p>
+  <p>A <strong>Google User Messaging Platform (UMP)</strong> consent flow is presented to users in the EEA and UK before any ad loads, as required by applicable law; ads are not requested until consent is resolved. Outside those regions the consent step is a no-op.</p>
+  <p>You can review or reset your advertising identifier in your device's Google Settings → Ads, or remove ads entirely by upgrading to Plus or Pro. See Google's advertising and privacy policies for how this data is handled: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a> and <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
 
   <h2>In-App Purchases</h2>
   <p>Plus and Pro subscriptions are sold and processed through <strong>Google Play Billing</strong>. MyPart does not collect or store your payment details — purchases are handled entirely by Google Play, and your subscription status is synced to your account so it's recognized across your devices.</p>
@@ -136,16 +138,26 @@
   <ul>
     <li>No audio recordings of any kind</li>
     <li>No location data</li>
-    <li>No usage analytics or crash-reporting SDK is currently integrated</li>
+    <li>No crash-reporting SDK is currently integrated</li>
     <li>No sale of personal data to third parties</li>
+  </ul>
+  <p>For analytics, see <strong>Meta App Events</strong> below.</p>
+
+  <h2>Meta App Events</h2>
+  <p>MyPart includes Meta's <strong>App Events</strong> SDK (part of the Facebook SDK, via its <code>AppEventsLogger</code>), which logs app activation and session events. This is used to measure app usage and installs.</p>
+  <ul>
+    <li>On activation, the SDK <strong>automatically collects your device's Google Advertising ID</strong> and transmits activation and session data to Meta.</li>
+    <li>This runs on all tiers and is <strong>separate from, and in addition to,</strong> Facebook's use as an optional sign-in method described above.</li>
+    <li>You can review or reset your advertising identifier in your device's Google Settings → Ads. See Meta's privacy policy for how this data is handled: <a href="https://www.facebook.com/privacy/policy">facebook.com/privacy/policy</a></li>
   </ul>
 
   <h2>Third-Party Services</h2>
   <ul>
     <li><strong>Firebase (Google)</strong> — authentication, Cloud Firestore. See Google's privacy policy for how Firebase infrastructure handles data: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-    <li><strong>Google AdMob</strong> — ad serving on the Free tier. See Google's ad policy: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></li>
-    <li><strong>Google Play Billing</strong> — subscription purchases.</li>
-    <li><strong>Facebook Login</strong> — optional sign-in method. See Meta's privacy policy: <a href="https://www.facebook.com/privacy/policy">facebook.com/privacy/policy</a></li>
+    <li><strong>Google Play Billing</strong> — will process subscription purchases once paid checkout launches; not yet live.</li>
+    <li><strong>Facebook Login</strong> — optional sign-in method. See Meta's privacy policy for how Facebook handles authentication data: <a href="https://www.facebook.com/privacy/policy">facebook.com/privacy/policy</a></li>
+    <li><strong>Meta App Events</strong> — app-activation/analytics logging via the Facebook SDK's <code>AppEventsLogger</code>; automatically collects the device advertising identifier and transmits activation/session data to Meta. See Meta's privacy policy: <a href="https://www.facebook.com/privacy/policy">facebook.com/privacy/policy</a></li>
+    <li><strong>Google AdMob</strong> — banner advertising on the Free tier; collects device/advertising identifiers to serve and measure ads, with a UMP consent flow for EEA/UK users. See Google's advertising and privacy policies: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a> and <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
   </ul>
 
   <h2>How to Delete Your Account</h2>
